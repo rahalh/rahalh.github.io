@@ -4,62 +4,50 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Photo Gallery - Home</title>
+      <title>Portfolio - Home</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
-      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
       <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
   </head>
 
   <body>
 
+    <header>
+      <a href="index.html">
+        <h1>Portfolio</h1>
+      </a>
+    </header>
     
-    <div id="container">
+    <!--
+      Breadcrumbs of parent albums
+    -->
     
-      <!--
-        Gallery title
-      -->
-      <header>
-        <h1><a href="index.html">Photo Gallery</a></h1>
-      </header>
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+    </ul>
     
-      <!--
-        Breadcrumbs of parent albums
-      -->
-      <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>
-      </nav>
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+    </ul>
     
-      <!--
-        Nested albums, if any
-      -->
-      <div id="albums">
-      </div>
+    <!--
+      Pagination
+    -->
     
-      <!--
-        All photos and videos
-      -->
-      <ul id="media" class="clearfix">
-      </ul>
-    
-      <!--
-        Pagination
-      -->
-    
-      <!--
-        Zip file link
-      -->
+    <!--
+      Zip file link
+    -->
     
     
-      <!--
-        Optional footer
-      -->
-      <footer>
-        <p>Copyright Text</p>
-      </footer>
-    
-    </div>
+    <!--
+      Optional footer
+    -->
     <!-- Video loader -->
     <div id="videos">
     </div>
